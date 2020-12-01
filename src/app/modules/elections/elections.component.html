@@ -1,0 +1,105 @@
+<!-- <body> -->
+     <header>  
+<div class="container">
+    <h2>Create New Election</h2><hr><br>
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+          <div id="user-data">
+            <div class="form-group">
+              <label for="username">Election Name:</label>
+              <input type="text" id="username" class="form-control" ngModel name="electionName">
+            </div><br>
+
+            <div class="form-group">
+                <label for="secret">Position:</label>
+                <select id="secret" class="form-control" ngModel name="position">
+                  <option value="pet">---</option>
+                  <option value="teacher">Treasurer</option>
+                  <option value="teacher">Vice President</option>
+                  <option value="teacher">General Secretary</option>
+                </select>
+              </div> <br>
+
+            <div class="form-group">
+              <label for="startdate">Election Start Date:</label>
+              <input type="date" id="Date" class="form-control" ngModel name="date">
+            </div><br>
+            <div class="form-group">
+                <label for="startdate">Election End Date:</label>
+                <input type="date" id="Date" class="form-control" ngModel name="date">
+              </div>
+          </div><br>
+        
+          <button class="btn btn-success" type="submit">Create</button>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+<br>
+<br></header>
+  <mat-divider></mat-divider> <br>
+
+  <body>
+  <br>
+  <!-- List Table -->
+  <h2>Impending Elections</h2><hr><br>
+  
+  <table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>ID</th>
+            <th>Election Name</th>
+            <th>Position</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Nominations</th>
+            <th></th>
+            <th>Main Election</th>
+            </tr>
+    </thead>
+
+    <tbody>
+        <tr> 
+
+            <td class="align-middle">1</td>
+            <td class="align-middle">August 2021</td>
+            <td class="align-middle">President</td>
+            <td class="align-middle">31-08-2020</td>
+            <td class="align-middle">31-08-2020</td>
+            <button class="btn btn-success" type="submit">open</button>
+            <button class="btn btn-dark" type="submit">close</button>
+
+        </tr>
+
+        <tr> 
+
+            <td class="align-middle">2</td>
+            <td class="align-middle">September 2021</td>
+            <td class="align-middle">Vice President</td>
+            <td class="align-middle">31-08-2020</td>
+            <td class="align-middle">31-08-2020</td>
+            <button class="btn btn-success" type="submit">open</button>
+            <button class="btn btn-dark" type="submit">close</button>
+
+        </tr>
+
+        <tr> 
+
+            <td class="align-middle">3</td>
+            <td class="align-middle">October 2021</td>
+            <td class="align-middle">General Secretary</td>
+            <td class="align-middle">31-08-2020</td>
+            <td class="align-middle">31-08-2020</td>
+            <button class="btn btn-success" type="submit">open</button>
+            <button class="btn btn-dark" type="submit">close</button>
+
+        </tr>
+
+    </tbody>
+</table>
+</body>
+
+
+<!-- </body> -->
